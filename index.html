@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Fruit Brust</title>
 </head>
+
 <body>
-    <header>
+    <header class="md:mx-24 lg:mx-32">
+        <!-- navbar section -->
+        <!-- for mobile view -->
+        <nav class="flex flex-row-reverse items-center justify-between md:flex-row md:bg-[#F85559] my-10 px-8 py-2 md:rounded-full">
+            <!-- menu items for mobile view -->
+            <div class=" md:hidden">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-5 h-5 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us </a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- menu items for large devices view -->
+            <div class=" text-white hidden lg:block">
+                <ul class="flex justify-between text-lg md:gap-2 lg:gap-8  ">
+                    <li><a>Home</a></li>
+                    <li><a>About Us </a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="">
+                <h3 class="font-sans text-xl font-bold text-black md:text-white md:text-4xl ">Fruit Burst</h3>
+            </div>
+            <div class="hidden md:block">
+                <input type="text" placeholder="Search" class="input  relative rounded-full" />
+                <button class="btn btn-ghost btn-circle absolute right-28  lg:mr-14 md:mr-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
 
     </header>
 
@@ -15,7 +66,8 @@
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
