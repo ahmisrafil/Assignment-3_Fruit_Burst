@@ -125,10 +125,11 @@
                 </div>
 
             </div>
-            
+
             <!-- bonus part -->
             <div class="hidden lg:block ">
-                <div class="grid grid-cols-5 gap-x-6 text-center px-10 py-6  relative -top-20 -right-48 w-2/3 h-48  bg-[#FFF] rounded-lg shadow-[#0000008f]">
+                <div
+                    class="grid grid-cols-5 gap-x-6 text-center px-10 py-6  relative -top-20 -right-48 w-2/3 h-48  bg-[#FFF] rounded-lg shadow-[#0000008f]">
                     <div>
                         <img src="images/fruit1.png" alt="">
                         <p>Strawberry</p>
@@ -152,11 +153,48 @@
                 </div>
             </div>
         </section>
-        
     </header>
 
-    <main>
-
+    <main class="md:mx-24 lg:mx-32">
+        <!-- deal of the day -->
+        <section class="mt-6">
+            <div class="flex flex-col lg:flex-row justify-center text-center lg:text-left ">
+                <div class=" ">
+                    <h3 class="text-5xl font-extrabold mb-4">Deal of the day</h3>
+                    <p class="lg:pr-96">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- timer -->
+                <div class="flex justify-center text-center mt-5">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono font-bold text-2xl lg:text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono font-bold text-2xl lg:text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono font-bold text-2xl lg:text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono font-bold text-2xl lg:text-5xl">
+                                <span style="--value:40;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
