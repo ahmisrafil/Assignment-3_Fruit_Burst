@@ -16,7 +16,7 @@
             class="flex flex-row-reverse items-center justify-between md:flex-row md:bg-[#F85559] my-10 px-8 py-2 md:rounded-full">
             <!-- menu items for mobile view -->
             <div class=" md:hidden">
-                <div class="dropdown">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             class="inline-block w-5 h-5 stroke-current">
@@ -30,6 +30,14 @@
                         <li><a>About Us </a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
+                        <li>
+                            <div>
+                                <input type="text" placeholder="Search" class="input  relative rounded-full" />
+                                <button class="btn btn-ghost btn-circle absolute right-0 lg:mr-14 md:mr-6">
+                                    <img src="images/search.png" alt="">
+                                </button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
